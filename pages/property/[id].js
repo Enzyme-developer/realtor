@@ -18,7 +18,6 @@ const PropertyDetails = ({ propertyDetails: { price, rentFrequency, rooms, title
         </Text>
      </Flex>   
 
-
       <Flex paddingTop='2' alignItems='center'>
         <Box paddingRight='3' color='green.400'>{isVerified && <GoVerified />}</Box>
         <Text fontWeight='bold' fontSize='lg'>
