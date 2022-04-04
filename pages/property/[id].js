@@ -12,6 +12,13 @@ const PropertyDetails = ({ propertyDetails: { price, rentFrequency, rooms, title
   <Box maxWidth='1000px' margin='auto' p='4'>
     {photos && <ImageScrollbar data={ photos } />}
     <Box w='full' p='6'>
+    <Flex paddingTop='2' alignItems='center' justifyContent='center'>
+        <Text fontWeight='bold' fontSize='lg' color='green.500'>
+          Swipe to view multiple Images
+        </Text>
+     </Flex>   
+
+
       <Flex paddingTop='2' alignItems='center'>
         <Box paddingRight='3' color='green.400'>{isVerified && <GoVerified />}</Box>
         <Text fontWeight='bold' fontSize='lg'>
