@@ -10,7 +10,7 @@ export default function Layout({ children }) {
       <Head>
         <title>Real Estate</title>
       </Head>
-      <Box maxWidth='1280px' m='auto'>
+      <Box maxWidth='100%' m='auto'>
         <header>
           <Navbar />
         </header>
