@@ -5,15 +5,13 @@ import { BsSearch } from 'react-icons/bs';
 import { FiKey } from 'react-icons/fi';
 
 const Navbar = () => (
-  <Flex p='2' borderBottom='1px' borderColor='gray.100'>
-    <Box fontSize='3xl' color='green.500' fontWeight='bold'>
-      <Link href='/' paddingLeft='2'>Realtor</Link>
-    </Box>
-    <Spacer />
+  <Flex p='2' borderBottom='1px' borderColor='gray.100' flexWrap='wrap'>
+
+    
     <Box>
-      <Menu>
+      <Menu w='100%'>
         <MenuButton as={IconButton} icon={<FcMenu />} variant='outline' color='red.400' />
-        <MenuList>
+        <MenuList w='100%'>
           <Link href='/' passHref>
             <MenuItem icon={<FcHome />}>Home</MenuItem>
           </Link>
@@ -29,6 +27,13 @@ const Navbar = () => (
         </MenuList>
       </Menu>
     </Box>
+
+    <Spacer />
+
+    <Box fontSize='2xl' color='green.500' fontWeight='bold'>
+      <Link href='/' paddingLeft='2'>Realtor</Link>
+    </Box>
+
   </Flex>
 );
 
