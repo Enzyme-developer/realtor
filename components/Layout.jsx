@@ -11,9 +11,6 @@ export default function Layout({ children }) {
       </Head>
       <Flex maxWidth='100%' w='100%' m='auto' flexDirection='column'>
         <Navbar />
-        {/* <header>
-          <Navbar />
-        </header> */}
         <main>{children}</main>
         <footer>
           <Footer />
